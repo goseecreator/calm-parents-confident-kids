@@ -110,8 +110,8 @@ export const chapters = [
     title: "Chapter 10: Co-Parenting with the Universe™",
     summary: "",
     content: [
-  "Your job is to help her recognize and respect her powerful brain signals that tell her when she's hungry. Your job is to respect those signals and offer her nourishing options. Your job is to be aware of the cues she gives when she's satisfied. That means that some days, when she's going through a growth spurt or when she's running all over the place, she eats like a professional football player. And that's ok! That also means there will be some meals and some whole days when she's not very hungry and she eats like abird. That's ok as well!",
-    "Page 49, Angela Humburg MS, RDN, LD"
+  "The stories we tell ourselves about who we are and how much power we have are creating how we see ourselves in the world, how we see the world, and how we see the world seeing us. Remember, the meaning you choose to assign to what is happening in your lives actually creates your reality.",
+    "Page 99, Murielle Fellous"
     ],
     testimonials: [],
   },
@@ -121,7 +121,7 @@ export const chapters = [
     summary: "",
     content: [
   "Learning to listen to your body will give you lots of information, from how to eat healthy foods to being able to manage your thoughts in a positive way. For instance, a fad diet doesn't set you up for success. Your body knows what it needs to be healthy and have energy. When you learn to listen to those cues, you will feel so much better! Teaching your children how to listen to their bodies will make them healthier and happier too.",
-    "Page 49, Patricia Dawn Clark"
+    "Page 105, Patricia Dawn Clark"
     ],
     testimonials: [],
   },
@@ -170,8 +170,8 @@ export const chapters = [
     title: "Chapter 16: Little Eyes and Ears",
     summary: "",
     content: [
-  "My three children just witnessed their mother tackling a seemingly insurmountable problem, using lessons taught to her years earlier. Their little ears heard me repeat my father's words, and their little eyes watched how I managed one problem after another",
-    "Page 49, Angela Humburg MS, RDN, LD"
+  "My three children just witnessed their mother tackling a seemingly insurmountable problem, using lessons taught to her years earlier. Their little ears heard me repeat my father's words, and their little eyes watched how I managed one problem after another.",
+    "Page 145-146, Deborah Helser"
     ],
     testimonials: [],
   },
@@ -190,7 +190,7 @@ export const chapters = [
     title: "Chapter 18: The Independent Thinker",
     summary: "",
     content: [
-  `We lifted her hair and examined her birthmark. It covered half of her face, nose, cheek forehead, neck and on into her scalp. It was even on her gums. It was fascinating. And then I asked her, "Well `,
+  `We lifted her hair and examined her birthmark. It covered half of her face, nose, cheek forehead, neck and on into her scalp. It was even on her gums. It was fascinating. And then I asked her, "Well you tell me, are you pretty?" I watched her carefully and thoughtfully, looking at herself. I could see the gears turning, and thens he turned to me and told me she was beautiful. I agreed with her assessment. And that was that.`,
     "Page 159, Constance J. Greer"
     ],
     testimonials: [],

@@ -9,3 +9,16 @@ html, body, #root {
   margin: 0;
   padding: 0;
 }
+
+@layer base {
+  html { color-scheme: light; }
+  body { @apply text-ink bg-white; }
+}
+
+@layer components {
+  .cpck-container { @apply container; }
+  .cpck-section { @apply py-section sm:py-section lg:py-section-lg; }
+  .cpck-prose { @apply max-w-[70ch] leading-relaxed text-body; }
+  .cpck-card { @apply rounded-xl border bg-white shadow-card; }
+  .cpck-btn { @apply inline-flex items-center justify-center px-4 py-2 rounded-md border text-sm font-medium hover:shadow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2; }
+}

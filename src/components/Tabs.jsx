@@ -14,7 +14,7 @@ export default function Tabs({ items = [], activeId, onChange }) {
     <div className="w-full">
       <div
         ref={listRef}
-        className="flex overflow-x-auto gap-2 py-2 px-2 border-b scrollbar-thin"
+        className="flex overflow-x-auto gap-2 py-3 px-2 scrollbar-thin snap-x snap-mandatory"
         role="tablist"
         aria-label="Chapters"
       >
@@ -29,8 +29,12 @@ export default function Tabs({ items = [], activeId, onChange }) {
               aria-controls={`${baseId}-${it.id}`}
               id={`${baseId}-${it.id}-tab`}
               onClick={() => onChange?.(it.id)}
-              className={`shrink-0 px-3 py-2 rounded-md text-sm transition
-                ${selected ? "bg-gray-900 text-white" : "hover:bg-gray-100"}`}
+              className={`shrink-0 snap-start px-4 py-2 rounded-full text-sm font-medium transition-all
+                ${
+                  selected
+                    ? "bg-brand text-white shadow-card"
+                    : "bg-white text-ink border hover:bg-gray-50"
+                }`}
             >
               {it.title}
             </button>

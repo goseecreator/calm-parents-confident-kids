@@ -1,10 +1,8 @@
 import { useMemo, useState } from "react";
 
 export default function VideoCard({ item, onOpen }) {
-  // sanitize id
   const id = (item.videoId || "").trim();
 
-  // Build a fallback chain (add item.thumb first if you ever use custom images)
   const sources = useMemo(
     () => [
       `https://img.youtube.com/vi/${id}/maxresdefault.jpg`,
@@ -18,15 +16,14 @@ export default function VideoCard({ item, onOpen }) {
   const thumb = sources[Math.min(thumbIdx, sources.length - 1)];
 
   const handleImgError = () => {
-    // Try the next fallback if available
     setThumbIdx((i) => (i < sources.length - 1 ? i + 1 : i));
   };
 
   return (
     <button
       onClick={() => onOpen?.(item)}
-      className="text-left rounded-xl border overflow-hidden bg-white hover:shadow transition
-                 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+      className="text-left rounded-2xl border bg-white hover:shadow-lg transition-all duration-200 overflow-hidden 
+                 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
     >
       <div className="relative aspect-video bg-gray-100">
         <img
@@ -36,19 +33,23 @@ export default function VideoCard({ item, onOpen }) {
           className="absolute inset-0 w-full h-full object-cover"
           loading="lazy"
         />
-        <div className="absolute inset-0 grid place-items-center bg-black/20">
-          <span className="inline-flex items-center justify-center rounded-full bg-white/90 px-3 py-1 text-xs font-medium border">
+        <div className="absolute inset-0 grid place-items-center bg-black/25">
+          <span className="inline-flex items-center justify-center rounded-full bg-white/90 px-3 py-1 text-xs font-semibold border shadow">
             ▶︎ Watch
           </span>
         </div>
       </div>
 
       <div className="p-4">
-        <h3 className="font-semibold leading-snug">{item.title}</h3>
-        {item.by && <p className="mt-1 text-sm text-gray-600">{item.by}</p>}
+        <h3 className="font-semibold text-ink leading-snug">{item.title}</h3>
+        {item.by && <p className="mt-1 text-sm text-mist">{item.by}</p>}
         {item.date && (
-          <p className="mt-1 text-xs text-gray-500">
-            {new Date(item.date).toLocaleDateString()}
+          <p className="mt-1 text-xs text-gray-400">
+            {new Date(item.date).toLocaleDateString(undefined, {
+              month: "short",
+              day: "numeric",
+              year: "numeric",
+            })}
           </p>
         )}
         {item.description && (

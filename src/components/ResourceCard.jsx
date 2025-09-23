@@ -5,20 +5,25 @@ export default function ResourceCard({ item }) {
       href={item.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="block rounded-xl border overflow-hidden hover:shadow transition bg-white"
+      className="group block rounded-2xl border border-gray-200 overflow-hidden bg-white transition hover:shadow-card hover:border-gray-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-brand"
     >
-      <div className="aspect-video bg-gray-100">
+      {/* Thumbnail */}
+      <div className="aspect-video bg-gray-50 flex items-center justify-center overflow-hidden">
         <img
           src={item.image}
           alt={item.title}
-          className="w-full h-full object-contain p-4"
+          className="w-full h-full object-contain p-6 transition-transform duration-300 group-hover:scale-105"
           loading="lazy"
         />
       </div>
-      <div className="p-4">
-        <h3 className="font-semibold text-lg">{item.title}</h3>
+
+      {/* Content */}
+      <div className="p-5">
+        <h3 className="font-heading text-lg font-semibold text-ink group-hover:text-brand transition-colors">
+          {item.title}
+        </h3>
         {item.description && (
-          <p className="mt-2 text-sm text-gray-700">{item.description}</p>
+          <p className="mt-2 text-sm text-mist">{item.description}</p>
         )}
       </div>
     </a>

@@ -20,18 +20,25 @@ export default function Lightbox({ open, onClose, item }) {
       aria-modal="true"
       aria-label={item.title}
       onClick={(e) => {
+        // Closes only when clicking the darkened background
         if (e.target === e.currentTarget) onClose?.();
       }}
     >
       <div className="absolute inset-0 bg-black/60" />
       <div className="relative w-full max-w-5xl rounded-xl bg-black shadow-xl overflow-hidden">
-        <button
-          onClick={onClose}
-          className="absolute top-2 right-2 z-10 px-2 py-1 rounded bg-white/90 hover:bg-white"
-          aria-label="Close"
-        >
-          ✕
-        </button>
+        {/* Close Button */}
+<button
+  onClick={onClose}
+  className="absolute top-3 right-3 z-10 text-white text-xl hover:shadow-lg hover:scale-105
+ bg-black/50 hover:bg-white hover:text-black transition-all duration-200 rounded-full p-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+  aria-label="Close"
+>
+  <span className="sr-only">Close</span>
+  ×
+</button>
+
+
+        {/* YouTube iframe */}
         <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
           <iframe
             className="absolute inset-0 w-full h-full"
