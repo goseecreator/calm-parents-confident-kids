@@ -4,7 +4,7 @@ export const creators = [
     slug: "angela-humburg",
     name: "Angela Humburg",
     role: "Contributing Author, Registered Dietitian Nutritionist, Certified Intiutive Eating Counselor",
-    headshot: "/Angela Humburg.png", // put a real image here or remote URL
+    headshot: "/Angela Humburg.png",
     bio: "Angela Humburg is a Registered Dietitian Nutritionist and a Certified Intuitive Eating Counselor. After years of frustration with diet culture, Angela became The Diet Renegade. Her passion is teaching others how to improve their relationships with both food and their bodies and becoming diet renegades themselves. She enjoys guiding clients in seeking their own unique body wisdom and rejecting diet culture. Much of her “education” has been firsthand with understanding and implementing the keys to brain training and body wisdom with her six children whom she has been raising with her husband Jeff for the past 20 years. If you’d like more information about becoming a Diet Renegade, visit Angela at becomingadietrenegade.com! Super-charge your journey to Becoming a Diet Renegade in just 3 minutes a day watching virtual “flashcards”! Experience Angela’s Positive Prime session at https://www.positiveprime.com/dietrenegade",
     links: { site: "https://gem.godaddy.com/signups/5cb2dcf2cca74959bb22a09f87e3a99b/join" }
   },
@@ -62,15 +62,22 @@ export const creators = [
     bio: "Kristin A. Carbone is a heart centered Soulprenuer. She is celebrating 32 years of marriage to her loving husband Michael and is the mother of a fabulously independent teen named Makayla. She is lovingly sandwiched between caring for her daughter and her mother – 93 years young. Kristin is passionate about self-care, organic living and helping women carve out time for themselves. Her motto is, “Self-care makes everything work!!” Kristin inspires busy moms and other caregivers to invest in themselves. She offers tips and tools to staying aligned in Mind, Body and Soul, taking them from Stuck to Spectacular! You can visit her on her Facebook Page, My Organic Soul with Kristin A. Carbone, or reach out to her at: kristin.carbone33@gmail.com and receive a FREE Mindset Tool at www.myorganicsoulution.com Instagram @kristin_sharing_caring Facebook My Organic Soul with Kristin A. Carbone",
     links: { site: "https://myorganicsoulution.com/" }
   },   
-  {
-    order: 8,
-    slug: "lee-collver-richards",
-    name: "Lee Collver-Richards",
-    role: "Contributing Author, A versatile, engaging actor, author, and teacher",
-    headshot: "/Lee Collver-Richards.png",
-    bio: "Lee is a versatile, engaging actor, author, and teacher with a creative spirit and exuberance in all manner of collaborative artistry and scientific discovery. She lives on California’s Central Coast with her partner of nearly 40 years. She is a co-founder of the Melrose Avenue Magnet School in Los Angeles (2009); a research fellow of the Peace Academy of the Sciences and Arts in San Luis Obispo (2017); and curriculum designer for the SSS Ananda Van community school in northern India (2021). She is a proponent of adopting a beginner’s mindset toward all endeavors, creations, and the development of continual wonder, gratitude, and fierce compassionate stewardship for humanity’s greatest teacher, the natural world, Planet Earth, Mother Gaia, now and consistently. You can reach Lee through Mighty Networks’ Conversations with Love, live the 11th and 22nd of every month at 11 a.m. Pacific Time.  On her website http://www.leecollver.com/.  For booking and private consult mailto:connect@leecollver.com",
-    links: { site: "https://www.leecollver.com/" }
-  },   
+{
+  order: 8,
+  slug: "lee-collver-richards",
+  name: "Lee Collver-Richards",
+  role: "Contributing Author. Canadian-born. World Traveler. Hawai'i home.",
+  headshot: "/Lee Collver-Richards.png",
+  bio: [
+    "Lee has devoted her professional life to creating exceptional curriculum and learning experiences for adults and children alike, teachers and learners, one and the same.",
+    "Affectionately known as the joy maker, she invites everyone she meets to more fully love and include the child they once were.",
+    "She imagines us all creating from a heart-centered beginner's mind. In living service to the Earth and the star-birthing Cosmos. In loving kindness to all our relations. In honest commitment to becoming The Whole New Human.",
+    "Life is The All-Age School we all belong to, and where we learn, live, and remember together by heart.",
+    "If you have felt disconnected from others, from yourself, or from the living Earth, connect with Lee and a kindred Whole New Human community of lifelong learners at LearnByHeart.org.",
+    "For booking programs, speaking engagements, or private consultation, email connect@leecollver.com."
+  ],
+  links: { site: "https://www.leecollver.com/" }
+},   
   {
     order: 9,
     slug: "louisa-joy-dykstra",

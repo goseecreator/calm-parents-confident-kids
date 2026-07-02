@@ -10,7 +10,7 @@ export default function ResourceCard({ item }) {
       {/* Thumbnail */}
       <div className="aspect-video bg-gray-50 flex items-center justify-center overflow-hidden">
         <img
-          src={item.image}
+          src="/hairy thought.jpg"
           alt={item.title}
           className="w-full h-full object-contain p-6 transition-transform duration-300 group-hover:scale-105"
           loading="lazy"

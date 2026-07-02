@@ -1,95 +1,296 @@
 // src/pages/Home.jsx
-import { motion } from "framer-motion";
-import {  useScroll, useTransform } from "framer-motion";
-import Section from "../components/Section.jsx";
+import { useState } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import Modal from "../components/Modal.jsx";
+import WaveDivider from "../components/WaveDivider.jsx";
+import LayeredWave from "../components/LayeredWave.jsx";
 
 export default function Home() {
-  const { scrollY } = useScroll();
 
-  // Translate upward as scrollY increases (merge effect)
-  const y = useTransform(scrollY, [0, 400], [100, 0]);
-  const opacity = useTransform(scrollY, [0, 400], [0, 1]);
+  const [showCoverModal, setShowCoverModal] = useState(false);
 
   return (
     <div>
       {/* HERO */}
-   <section className="relative h-screen bg-black text-white">
-  {/* Background Image */}
-  <img
-    src="/CalmParentsFrontCoverFIN1.jpg"
-    alt="book cover image"
-    className="absolute inset-0 w-full h-full object-cover"
-    aria-hidden
-  />
+      <section className="relative overflow-hidden bg-warm-white text-ink">
+        {/* Watercolor background */}
+        <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_top_left,rgba(233,122,103,.14),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(169,193,168,.18),transparent_35%)]" />
 
-  {/* Dark overlay for contrast */}
-  <div className="absolute inset-0 bg-black/40 z-0" aria-hidden></div>
+        <div className="absolute -top-24 -left-24 z-0 h-72 w-72 rounded-full bg-peach/30 blur-[100px]" />
+        <div className="absolute -bottom-20 -right-20 z-0 h-80 w-80 rounded-full bg-soft-sage/40 blur-[120px]" />
 
-  {/* Foreground Content */}
-  <div className="relative z-10 flex flex-col justify-center items-center h-full text-center px-4">
-    <h1 className="text-5xl md:text-7xl font-heading text-white drop-shadow-md">
-      Calm Parents Confident Kids.
-    </h1>
+        {/* WATER ART */}
 
-    <p className="mt-4 max-w-xl text-xl text-white font-body drop-shadow-sm">
-      Let your parenting story bloom with tools that power confidence
-    </p>
+        <img
 
-    <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
-      <a
-        href="https://a.co/d/gUlUB0S"
-        className="inline-flex items-center justify-center rounded-md border border-transparent bg-accent text-white font-body px-5 py-2 text-sm shadow-sm hover:bg-accent-soft focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
-      >
-        Buy the Book
-      </a>
+          src="/art/watercolor-coral.svg"
 
-      <a
-        href="https://read.amazon.com/sample/1733822402?clientId=share"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center justify-center rounded-md border border-white bg-transparent text-white font-body px-5 py-2 text-sm hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
-      >
-        Read a Sample
-      </a>
-    </div>
-  </div>
-</section>
+          className="
 
+absolute
+
+top-0
+
+left-0
+
+w-80
+
+opacity-60"
+
+        />
+
+
+
+        <img
+
+          src="/art/watercolor-sage.svg"
+
+          className="
+
+absolute
+
+bottom-0
+
+right-0
+
+w-96
+
+opacity-70"
+
+        />
+
+        <img
+          src="/art/leaf-corner.svg"
+          alt=""
+          aria-hidden="true"
+          className="pointer-events-none absolute -left-10 bottom-24 z-0 w-44 opacity-50 md:w-56"
+        />
+
+        {/* Content */}
+        <div className="container relative z-10 grid min-h-[82vh] items-center gap-10 py-section-lg md:grid-cols-2">
+          <div className="text-center md:text-left">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-coral">
+              Brain Training for Families
+            </p>
+
+            <h1 className="font-heading text-5xl leading-tight md:text-7xl">
+              Calm Parents.
+              <span className="block text-coral">Confident Kids.</span>
+            </h1>
+
+            <p className="mt-5 max-w-xl text-body text-mist">
+              Let your parenting story bloom with a simple tool that builds confidence,
+              connection, and resilience.
+            </p>
+
+            <div className="mt-7 flex flex-col gap-4 sm:flex-row sm:justify-center md:justify-start">
+              <a
+                href="https://a.co/d/gUlUB0S"
+                className="inline-flex items-center justify-center rounded-full bg-coral px-6 py-3 text-sm font-semibold text-white shadow-card transition hover:-translate-y-0.5 hover:bg-brand-dark"
+              >
+                Buy the Book
+              </a>
+
+              <a
+                href="https://read.amazon.com/sample/1733822402?clientId=share"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full border border-coral bg-white/70 px-6 py-3 text-sm font-semibold text-coral transition hover:-translate-y-0.5 hover:bg-cream"
+              >
+                Read a Sample
+              </a>
+            </div>
+          </div>
+
+          <div className="relative mx-auto max-w-sm">
+            <div className="absolute -left-10 -top-10 h-32 w-32 rounded-full bg-peach/30 blur-2xl" />
+            <div className="absolute -right-8 bottom-10 h-36 w-36 rounded-full bg-soft-sage/70 blur-2xl" />
+
+            <img
+              src="/CalmParentsFrontCoverFIN1.jpg"
+              alt="Calm Parents Confident Kids book cover"
+              className="relative rounded-3xl shadow-card"
+            />
+          </div>
+        </div>
+
+        <WaveDivider />
+      </section>
+      <section className="relative overflow-hidden bg-cream py-section-lg">
+
+        {/* Decorative watercolor */}
+
+        <div className="absolute top-0 right-0 h-96 w-96 rounded-full bg-peach/20 blur-[120px]" />
+
+        <div className="container relative z-10">
+
+          <div className="text-center">
+
+            <p className="mb-3 text-sm uppercase tracking-[0.25em] text-coral">
+              Reader Testimonials
+            </p>
+
+            <h2 className="font-heading text-4xl md:text-5xl text-ink">
+              Why Readers Love It
+            </h2>
+
+            <p className="mx-auto mt-4 max-w-2xl text-mist">
+              Parents, educators, and caregivers are discovering practical
+              tools that create more peace, confidence, and connection.
+            </p>
+
+          </div>
+
+
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+
+            <figure className="relative rounded-[28px] bg-white p-8 shadow-card overflow-hidden">
+              <div className=" absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-coral to-peach" />
+        <div className="text-gold text-xl">
+                ★★★★★
+              </div>
+              <blockquote className="mt-4 italic text-ink">
+                "It simply, generously, and lightheartedly offers a path to view yourself and your world in a new way."              </blockquote>
+
+              <figcaption className="mt-6 text-sm text-mist">
+               SoPoPoet, Amazon Reviewer
+              </figcaption>
+
+            </figure>
+
+
+            <figure className="relative rounded-[28px] bg-white p-8 shadow-card overflow-hidden">
+              <div className=" absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-coral to-peach" />
+
+      
+
+              <blockquote className="mt-4 italic text-ink">
+                "An easy, simple read that has you knowing how to love yourself more and so, with loving tenderness and fierce compassion, how to model for the children in your care, how natural self-love really is."
+
+              </blockquote>
+
+              <figcaption className="mt-6 text-sm text-mist">
+                Dee Wallace, actor & author "Born Giving Birth to a New You"
+              </figcaption>
+
+            </figure>
+
+
+            <figure className="relative rounded-[28px] bg-white p-8 shadow-card overflow-hidden">
+              <div className=" absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-coral to-peach" />
+
+              <div className="text-gold text-xl">
+                ★★★★★
+              </div>
+
+              <blockquote className="mt-4 italic text-ink">
+                "I highly recommend this book to parents and future parents. I wish I had read this when my children were little."
+              </blockquote>
+
+              <figcaption className="mt-6 text-sm text-mist">
+                WinterSnow, Amazon Reviewer
+              </figcaption>
+
+            </figure>
+
+          </div>
+
+        </div>
+        <LayeredWave />
+
+      </section>
 
       {/* ANIMATED SECTION */}
-      <motion.div style={{ y, opacity }} className="relative z-10 -mt-48">
-        <Section
-fullBleed
-className="bg-brand-light text-ink"
-title="Calm Parents Confident Kids"
-subtitle="How to Use Brain Training to Raise Happy Resilient Children"
->
-<div className="flex flex-col justify-center items-center">
-<div className="rounded-xl border border-brand bg-white shadow-card overflow-hidden max-w-xs md:max-w-sm">
-<img
-src="https://calm-parents-confident-kids-bucket.s3.us-east-2.amazonaws.com/Calm+Parents+Confident+Kids+Cover+with+Ribbon.png"
-alt="Calm Parents Confident Kids book cover"
-className="w-full h-auto object-cover"
-/>
-</div>
+      <div className="relative z-10">        {/* DISCOVER WHAT'S INSIDE */}
+        <section className="relative overflow-hidden bg-warm-white py-section-lg text-ink">
+          <div className="absolute -left-24 top-10 h-80 w-80 rounded-full bg-peach/20 blur-[120px]" />
+          <div className="absolute -right-24 bottom-0 h-96 w-96 rounded-full bg-soft-sage/40 blur-[130px]" />
 
+          <div className="container relative z-10 grid gap-10 md:grid-cols-[1fr,1.1fr] md:items-center">
+            <div className="mx-auto max-w-sm rounded-[2rem] border border-peach/40 bg-white p-3 shadow-card overflow-hidden">
 
-<div className="max-w-xl space-y-4 text-center mt-4 text-body">
-<p>Do you want to be more confident as a parent?</p>
-<p>Would you like simple tools to raise your child’s — and your own — self-esteem?</p>
-<p>
-Learn to Train Your Brain to tell a different story and share this learning together.
-</p>
-<a
-href="#book"
-className="inline-flex items-center justify-center rounded-md bg-brand text-white px-5 py-2 text-sm font-medium hover:bg-brand-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
->
-BUY THE BOOK
-</a>
-</div>
-</div>
-</Section>
-      </motion.div>
+              <button
+                type="button"
+                onClick={() => setShowCoverModal(true)}
+                className="block w-full cursor-zoom-in"
+                aria-label="View back cover larger"
+              >
+
+                <img
+                  src="/backcover.png"
+                  alt="Calm Parents Confident Kids back cover"
+                  className="rounded-[1.5rem] transition-transform duration-300 hover:scale-[1.02]"
+                />
+
+              </button>
+
+            </div>
+
+            <div className="text-center md:text-left">
+              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-coral">
+                Discover What's Inside
+              </p>
+
+              <h2 className="font-heading text-4xl leading-tight md:text-5xl">
+                Practical tools for calmer, more confident parenting
+              </h2>
+
+              <p className="mt-5 max-w-xl text-body text-mist">
+                The book is the tool and you, your children, and your environment are the product of a wonderful life that comes with ease, joy, and confidence. These are normal stories from normal people that inspire real changes.
+              </p>
+
+              <ul className="mt-8 grid gap-4 text-left">
+                {[
+                  "Brain Training for Parents",
+                  "Raise Confident, Resilient Kids",
+                  "Create Connection & Cooperation",
+                  "Shift Your Story. Change Your Life.",
+                ].map((item) => (
+                  <li
+                    key={item}
+                    className="flex items-start gap-3 rounded-2xl bg-white/80 p-4 shadow-sm"
+                  >
+                    <span className="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-soft-sage text-sm text-ink">
+                      ✓
+                    </span>
+                    <span className="font-medium text-ink">{item}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center md:justify-start">
+                <a
+                  href="/book"
+                  className="inline-flex items-center justify-center rounded-full bg-coral px-6 py-3 text-sm font-semibold text-white shadow-card transition hover:-translate-y-0.5 hover:bg-brand-dark"
+                >
+                  Explore Chapters
+                </a>
+
+                <a
+                  href="https://read.amazon.com/sample/1733822402?clientId=share"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-full border border-coral bg-white/70 px-6 py-3 text-sm font-semibold text-coral transition hover:-translate-y-0.5 hover:bg-cream"
+                >
+                  Read a Sample
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <Modal
+        open={showCoverModal}
+        onClose={() => setShowCoverModal(false)}
+        title="Calm Parents Confident Kids — Back Cover"
+      >
+        <img
+          src="/backcover.png"
+          alt="Calm Parents Confident Kids back cover enlarged"
+          className="w-full h-auto rounded-lg"
+        />
+      </Modal>
     </div>
+
   );
 }

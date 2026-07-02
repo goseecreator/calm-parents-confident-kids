@@ -8,19 +8,33 @@ export default {
       screens: { lg: "72rem" }, // ~max-w-6xl
     },
     extend: {
-      colors: {
-        ink: "#111827",
-        mist: "#6B7280",
-        brand: {
-          light: "#FDF6EC",
-          DEFAULT: "#D4A373",
-          dark: "#3B3025",
-        },
-        accent: {
-          DEFAULT: "#BC5C3B",
-          soft: "#CBC3A6",
-        },
-      },
+     colors: {
+  cream: "#FAF6F1",
+  "warm-white": "#FFFDFB",
+
+  coral: "#E97A67",
+  peach: "#F4B69A",
+
+  sage: "#A9C1A8",
+  "soft-sage": "#DCE9D9",
+
+  gold: "#F1CF8A",
+  "dusty-blue": "#9AB7D3",
+
+  ink: "#2F3A37",
+  mist: "#66706B",
+
+  brand: {
+    light: "#FAF6F1",
+    DEFAULT: "#E97A67",
+    dark: "#2F3A37",
+  },
+
+  accent: {
+    DEFAULT: "#A9C1A8",
+    soft: "#DCE9D9",
+  },
+},
       spacing: {
         "section-sm": "2.5rem",
         "section": "3.5rem",
@@ -34,9 +48,29 @@ export default {
       },
       fontFamily: {
         heading: ['"Playfair Display"', 'serif'],
-        body: ['Montserrat', 'sans-serif'],
+        body: ['Inter', 'sans-serif'],
       },
     },
   },
   plugins: [],
 };
+
+/*
+
+_______________COLOR THEME___________________
+
+--cream: #FAF6F1;
+--warm-white: #FFFDFB;
+
+--coral: #E97A67;
+--peach: #F4B69A;
+
+--sage: #A9C1A8;
+--soft-sage: #DCE9D9;
+
+--gold: #F1CF8A;
+
+--dusty-blue: #9AB7D3;
+
+--ink: #2F3A37;
+--mist: #66706B;*/

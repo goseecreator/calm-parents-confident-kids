@@ -1,0 +1,27 @@
+<svg width="180"
+height="300"
+viewBox="0 0 180 300"
+xmlns="http://www.w3.org/2000/svg">
+
+<g
+stroke="#A9C1A8"
+stroke-width="2"
+fill="none">
+
+<path d="M90 290V20"/>
+
+<path d="M90 70
+C45 40 20 30 10 0"/>
+
+<path d="M90 110
+C45 90 20 85 5 55"/>
+
+<path d="M90 170
+C55 145 35 130 20 100"/>
+
+<path d="M90 230
+C55 205 40 190 30 160"/>
+
+</g>
+
+</svg>

@@ -1,0 +1,23 @@
+<svg width="500" height="300" viewBox="0 0 500 300"
+xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<filter id="blur">
+<feGaussianBlur stdDeviation="18"/>
+</filter>
+
+</defs>
+
+<path
+d="M80 120
+C140 40 260 40 340 110
+C420 180 430 250 300 260
+C180 270 40 220 80 120Z"
+
+fill="#E97A67"
+opacity=".18"
+filter="url(#blur)"
+/>
+
+</svg>

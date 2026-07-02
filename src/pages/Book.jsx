@@ -26,7 +26,7 @@ export default function Book() {
           {/* Book Cover */}
           <div className="rounded-xl border border-brand bg-brand-light shadow-card overflow-hidden max-w-xs md:max-w-sm">
             <img
-              src="https://calm-parents-confident-kids-bucket.s3.us-east-2.amazonaws.com/backcover.png"
+              src="/fullbookcover.jpg"
               alt="Book cover"
               className="w-full h-auto"
             />
