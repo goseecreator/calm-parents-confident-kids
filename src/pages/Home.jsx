@@ -133,7 +133,7 @@ export default function Home() {
 
           <div className="relative hidden lg:block">
             <img
-              src="/parent-child-pain-section.jpg"
+              src="/vitaly-gariev-9Ky5rMsDfo8-unsplash.jpg"
               alt="Parent and child sitting apart during a difficult parenting moment"
               className="h-[420px] w-full rounded-[2rem] object-cover shadow-card"
             />
