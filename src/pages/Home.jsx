@@ -78,8 +78,7 @@ export default function Home() {
 
           {/* RIGHT */}
 
-          <div className="relative mx-auto max-w-sm">
-
+<div className="relative mx-auto max-w-sm rotate-[4deg] transition-transform duration-300 hover:rotate-[2deg]">
             <div className="absolute -left-10 -top-10 h-32 w-32 rounded-full bg-peach/30 blur-2xl" />
 
             <div className="absolute -right-8 bottom-10 h-36 w-36 rounded-full bg-soft-sage/70 blur-2xl" />
@@ -87,8 +86,7 @@ export default function Home() {
             <img
               src="/CalmParentsFrontCoverFIN.png"
               alt="Calm Parents Confident Kids"
-              className="relative rounded-3xl shadow-card"
-            />
+  className="relative rounded-3xl shadow-[0_18px_45px_rgba(47,58,55,0.18)]"            />
 
           </div>
 
