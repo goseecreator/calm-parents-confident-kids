@@ -109,7 +109,7 @@ export const creators = [
     "If you have felt disconnected from others, from yourself, or from the living Earth, connect with Lee and a kindred Whole New Human community of lifelong learners at LearnByHeart.org.",
     "For booking programs, speaking engagements, or private consultation, email connect@leecollver.com."
   ],
-  links: { site: "https://www.leecollver.com/" }
+  links: { site: "https://leecollver.com/" }
 },   
   {
     order: 9,
