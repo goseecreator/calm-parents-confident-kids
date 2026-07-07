@@ -27,8 +27,8 @@ export default function App() {
           <Route path="/creators" element={<Navigate to={`/${defaultCreator}`} replace />} />
 
           {/* root-level creator pages */}
-          <Route path="/:slug" element={<CreatorSlugRouter />} />
-        </Routes>
+          <Route path="/creators/:slug" element={<Creators />} />
+          <Route path="/:slug" element={<Creators />} />        </Routes>
       </main>
       <Footer />
     </div>

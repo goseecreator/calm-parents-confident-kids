@@ -4,13 +4,23 @@ export default function Section({
   children,
   fullBleed = false,
   className = "",
-  image, // 🌱 new prop: optional background image
+  image,
 }) {
   const inner = (
     <>
-      {title && <h2 className="text-3xl font-semibold text-center">{title}</h2>}
-      {subtitle && <p className="text-slate-500 mt-2 text-center">{subtitle}</p>}
-      <div className="mt-6">{children}</div>
+      {title && (
+        <h2 className="font-heading text-4xl md:text-5xl text-ink text-center">
+          {title}
+        </h2>
+      )}
+
+      {subtitle && (
+        <p className="mx-auto mt-4 max-w-2xl text-center text-body text-mist">
+          {subtitle}
+        </p>
+      )}
+
+      <div className="mt-8">{children}</div>
     </>
   );
 
@@ -24,7 +34,12 @@ export default function Section({
           className="absolute inset-0 w-full h-full object-cover opacity-20"
         />
       )}
-      <div className={`relative z-10 ${fullBleed ? "px-4 py-12" : "mx-auto max-w-6xl px-4 py-12"}`}>
+
+      <div
+        className={`relative z-10 ${
+          fullBleed ? "px-4 py-12" : "mx-auto max-w-6xl px-4 py-12"
+        }`}
+      >
         {inner}
       </div>
     </section>

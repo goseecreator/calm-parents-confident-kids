@@ -3,16 +3,7 @@ export default function LayeredWave() {
 
     <div className="relative -mt-px -mb-px overflow-hidden bg-cream">
 
-      <svg
-
-        viewBox="0 0 1440 120"
-
-        preserveAspectRatio="none"
-
-        className="block h-20 w-full"
-
-        aria-hidden="true"
-
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none" className="block h-20 w-full" aria-hidden="true"
       >
 
         <path

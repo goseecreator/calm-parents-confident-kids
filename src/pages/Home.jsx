@@ -40,7 +40,7 @@ export default function Home() {
           <div className="text-center md:text-left">
 
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-coral">
-              Brain Training for Families
+              Brain Training for Parents
             </p>
 
             <h1 className="font-heading text-5xl leading-tight md:text-7xl">        Calm Parents.
@@ -312,7 +312,7 @@ export default function Home() {
               </p>
 
               <h2 className="font-heading text-4xl leading-tight md:text-5xl">
-                Practical tools for calmer, more confident parenting
+                A practical tool for calmer, more confident parenting
               </h2>
 
               <p className="mt-5 max-w-xl text-body text-mist">
@@ -321,7 +321,7 @@ export default function Home() {
               <ul className="mt-8 grid gap-4 text-left">
                 {[
                   "Brain Training for Parents",
-                  "Raise Confident, Resilient Kids",
+                  "Raise Confident, Happy, Resilient Kids",
                   "Create Connection & Cooperation",
                   "Shift Your Story. Change Your Life.",
                 ].map((item) => (
