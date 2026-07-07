@@ -58,12 +58,12 @@ export const creators = [
     order: 5,
     slug: "deborah-helser-2",
     name: "Deborah Helser",
-    role: "Contributing Author, Teacher's Aide with Special Needs and Pampered Chef Distributor",
+    role: "Contributing Author, Retired Teacher's Aide with Special Needs and Currently, Director with Pampered Chef 25 years as of 2/25/2026",
     headshot: "/Deborah Helser.png",
     bio: [
-      "Deborah Helser has worked 20 plus years as a Teacher's Aide with Special Needs Students as well as runs her own Direct Sales business with Pampered Chef since 2001.",
-      "She has been married to her husband Wayne since 1978 and has three grown (productive) offspring (Victoria Amerine, W. Scott & William) as well as a very dear daughter-in-law (Katie Stack), 3-year-old grandson (Ethan), 17-month-old granddaughter (Lily), and an amazing son-in-law (Lee), 8-year-old granddaughter (McKynlee), and 6-year-old granddaughter (Raegan).",
-      "You can connect with Deborah via her Pampered Chef website or email deborahhelser58@gmail.com",
+      "Deborah Helser worked 23 years as a Teacher's Aide with Special Needs Students until her retirement in 2022 as well as runs her own Direct Sales business with Pampered Chef since 2001.",
+      "She has been married to her husband Wayne since 1978 and has three grown (productive) offspring (Victoria Amerine, W. Scott & William) as well as 2 very dear daughters-in-law (Katie Stack and Meredith Mahen), 8-year-old grandson (Ethan), 6-year-old granddaughters (Lily) 3-year-old (Allie), and an amazing son-in-law (Lee Amerine), 13-year-old granddaughter (McKynlee), and 11-year-old granddaughter (Raegan).",
+      "You can connect with Deborah via her Pampered Chef website (www.pamperedchef.biz/debhelser) or email deborahhelser58@gmail.com",
     ],
       links: { site: "pamperedchef.biz/debhelser" }
   },
