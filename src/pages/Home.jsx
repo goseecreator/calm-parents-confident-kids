@@ -56,20 +56,18 @@ export default function Home() {
             <div className="mt-7 flex flex-col gap-4 sm:flex-row sm:justify-center md:justify-start">
 
               <a
-                href="https://a.co/d/gUlUB0S"
-                className="inline-flex items-center justify-center rounded-full bg-coral px-6 py-3 text-sm font-semibold text-white shadow-card transition hover:-translate-y-0.5 hover:bg-brand-dark"
-              >
-                Buy the Book
-              </a>
+                  href="https://a.co/d/gUlUB0S"
+                  className="inline-flex items-center justify-center rounded-full bg-coral px-6 py-3 text-sm font-semibold text-white shadow-card transition hover:-translate-y-0.5 hover:bg-brand-dark"
+                >
+                  Buy the Book
+                </a>
 
-              <a
-                href="https://read.amazon.com/sample/1733822402?clientId=share"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-full border border-coral bg-white/70 px-6 py-3 text-sm font-semibold text-coral transition hover:bg-cream"
-              >
-                Read a Sample
-              </a>
+                <a
+                  href="/book"
+                  className="inline-flex items-center justify-center rounded-full border border-coral bg-white/70 px-6 py-3 text-sm font-semibold text-coral transition hover:-translate-y-0.5 hover:bg-cream"
+                >
+                  Explore Chapters
+                </a>
 
             </div>
 
@@ -77,7 +75,7 @@ export default function Home() {
 
           {/* RIGHT */}
 
-<div className="relative mx-auto max-w-sm rotate-[4deg] transition-transform duration-300 hover:rotate-[2deg]">
+          <div className="relative mx-auto max-w-sm rotate-[4deg] transition-transform duration-300 hover:rotate-[2deg]">
             <div className="absolute -left-10 -top-10 h-32 w-32 rounded-full bg-peach/30 blur-2xl" />
 
             <div className="absolute -right-8 bottom-10 h-36 w-36 rounded-full bg-soft-sage/70 blur-2xl" />
@@ -85,7 +83,7 @@ export default function Home() {
             <img
               src="/CalmParentsFrontCoverFIN.png"
               alt="Calm Parents Confident Kids"
-  className="relative rounded-3xl shadow-[0_18px_45px_rgba(47,58,55,0.18)]"            />
+              className="relative rounded-3xl shadow-[0_18px_45px_rgba(47,58,55,0.18)]" />
 
           </div>
 
@@ -264,8 +262,8 @@ export default function Home() {
 
 
 
-              <blockquote className="mt-4 font-body text-body italic text-ink">    
-                            "An easy, simple read that has you knowing how to love yourself more and so, with loving tenderness and fierce compassion, how to model for the children in your care, how natural self-love really is."
+              <blockquote className="mt-4 font-body text-body italic text-ink">
+                "An easy, simple read that has you knowing how to love yourself more and so, with loving tenderness and fierce compassion, how to model for the children in your care, how natural self-love really is."
               </blockquote>
 
               <figcaption className="mt-6 text-sm text-mist">
@@ -338,20 +336,19 @@ export default function Home() {
               </ul>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center md:justify-start">
+
                 <a
-                  href="/book"
+                  href="https://a.co/d/gUlUB0S"
                   className="inline-flex items-center justify-center rounded-full bg-coral px-6 py-3 text-sm font-semibold text-white shadow-card transition hover:-translate-y-0.5 hover:bg-brand-dark"
                 >
-                  Explore Chapters
+                  Buy the Book
                 </a>
 
                 <a
-                  href="https://read.amazon.com/sample/1733822402?clientId=share"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/book"
                   className="inline-flex items-center justify-center rounded-full border border-coral bg-white/70 px-6 py-3 text-sm font-semibold text-coral transition hover:-translate-y-0.5 hover:bg-cream"
                 >
-                  Read a Sample
+                  Explore Chapters
                 </a>
               </div>
             </div>

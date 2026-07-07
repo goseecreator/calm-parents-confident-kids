@@ -65,11 +65,13 @@ export default function Book() {
                 Buy the Book
               </a>
 
-              <a
-                href="#chapters"
-                className="inline-flex items-center justify-center rounded-full border border-coral bg-white/70 px-6 py-3 font-body text-sm font-semibold text-coral transition hover:bg-cream"
+                 <a
+                href="https://read.amazon.com/sample/1733822402?clientId=share"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full border border-coral bg-white/70 px-6 py-3 text-sm font-semibold text-coral transition hover:bg-cream"
               >
-                Read Chapter Snippets
+                Read a Sample
               </a>
             </div>
           </div>
