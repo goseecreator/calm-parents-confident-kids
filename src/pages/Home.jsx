@@ -50,8 +50,7 @@ export default function Home() {
             </h1>
 
             <p className="mt-5 max-w-xl text-body text-mist">
-              Stories from real parents discovering new ways to create connection,
-              confidence, and cooperation.
+              Created by real parents to help you meet everyday moments with more ease, connection, and confidence.
             </p>
 
             <div className="mt-7 flex flex-col gap-4 sm:flex-row sm:justify-center md:justify-start">
@@ -312,18 +311,19 @@ export default function Home() {
               </p>
 
               <h2 className="font-heading text-4xl leading-tight md:text-5xl">
-                A practical tool for calmer, more confident parenting
+                A practical tool for creating calm at home
               </h2>
 
               <p className="mt-5 max-w-xl text-body text-mist">
-                This book helps parents move from reacting in fear toward responding with greater confidence, connection, and calm.              </p>
+                Learn to recognize patterns, shift from reacting to responding, and create more connection, confidence, and calm at home.
+              </p>
 
               <ul className="mt-8 grid gap-4 text-left">
                 {[
                   "Brain Training for Parents",
-                  "Raise Confident, Happy, Resilient Kids",
-                  "Create Connection & Cooperation",
-                  "Shift Your Story. Change Your Life.",
+                  "Relatable Stories from Parents Like You",
+                  "Pattern Recognition for Lasting Changes",
+                  "Simple Practices for More Connection and Cooperation",
                 ].map((item) => (
                   <li
                     key={item}
