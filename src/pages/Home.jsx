@@ -319,7 +319,7 @@ export default function Home() {
               >
 
                 <img
-                  src="/backcover.png"
+                  src="/backcover.webp"
                   alt="Calm Parents Confident Kids back cover"
                   className="rounded-[1.5rem] transition-transform duration-300 hover:scale-[1.02]"
                 />
