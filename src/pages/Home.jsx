@@ -1,14 +1,39 @@
 // src/pages/Home.jsx
 import { useState } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
 import Modal from "../components/Modal.jsx";
 import SageWave from "../components/SageWave.jsx";
+import { Helmet } from "react-helmet-async";
 
 export default function Home() {
 
   const [showCoverModal, setShowCoverModal] = useState(false);
 
   return (
+    <>
+
+<Helmet>
+  <title>Calm Parents Confident Kids | Brain Training for Families</title>
+
+  <meta
+    name="description"
+    content="Brain-based parenting tools, practical strategies, and stories that help families create calmer homes, stronger connections, and confident children."
+  />
+
+  <meta property="og:title" content="Calm Parents Confident Kids" />
+
+  <meta
+    property="og:description"
+    content="Brain Training for Parents. Practical tools for calmer homes, stronger connections, and confident kids."
+  />
+
+  <meta
+    property="og:image"
+    content="https://calmparentsconfidentkids.com/social-preview.jpg"
+  />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://calmparentsconfidentkids.com" />
+</Helmet>
     <div>
       {/* HERO */}
       <section className="relative min-h-[calc(100vh-72px)] overflow-hidden bg-warm-white text-ink">
@@ -81,8 +106,8 @@ export default function Home() {
             <div className="absolute -right-8 bottom-10 h-36 w-36 rounded-full bg-soft-sage/70 blur-2xl" />
 
             <img
-              src="/CalmParentsFrontCoverFIN.png"
-              alt="Calm Parents Confident Kids"
+              src="/CalmParentsFrontCoverFIN.webp"
+              alt="Calm Parents Confident Kids front cover"
               className="relative rounded-3xl shadow-[0_18px_45px_rgba(47,58,55,0.18)]" />
 
           </div>
@@ -124,7 +149,7 @@ export default function Home() {
 
             <div className="relative hidden lg:block">
               <img
-                src="/vitaly-gariev-9Ky5rMsDfo8-unsplash.jpg"
+                src="/vitaly-gariev-9Ky5rMsDfo8-unsplash.webp"
                 alt="Parent and child sitting apart during a difficult parenting moment"
                 className="h-[420px] w-full rounded-[2rem] object-cover shadow-card"
               />
@@ -367,6 +392,6 @@ export default function Home() {
         />
       </Modal>
     </div>
-
+</>
   );
 }
