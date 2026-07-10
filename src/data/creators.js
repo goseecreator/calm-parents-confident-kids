@@ -4,7 +4,7 @@ export const creators = [
     slug: "angela-humburg",
     name: "Angela Humburg",
     role: "Contributing Author, Registered Dietitian Nutritionist, Certified Intiutive Eating Counselor",
-    headshot: "/Angela Humburg.png",
+    headshot: "/Angela Humburg.webp",
     bio: [
       "Angela Humburg is a Registered Dietitian Nutritionist and a Certified Intuitive Eating Counselor. After years of frustration with diet culture, Angela became The Diet Renegade. Her passion is teaching others how to improve their relationships with both food and their bodies and becoming diet renegades themselves.",
       "She enjoys guiding clients in seeking their own unique body wisdom and rejecting diet culture. Much of her “education” has been firsthand with understanding and implementing the keys to brain training and body wisdom with her six children whom she has been raising with her husband Jeff for the past 20 years.",
@@ -19,7 +19,7 @@ export const creators = [
     slug: "charity-nicole-2",
     name: "Charity Nicole",
     role: "Contributing Author, A master Personality Marketer, Artist, Coach",
-    headshot: "/Charity Nicole.png",
+    headshot: "/Charity Nicole.webp",
     bio: [ 
     "Charity Nicole is the Princess of Positive Persuasion and your Funloving Leader at The #InstaHappyRich Life! “You can be happy and rich… instantly. Limitations don’t define you!”",
     "Charity is a Master Personality Marketer, Creative Heartist and Coach who pours her Sugarheart out through her live trainings, courses and written guides that teach you how to get your life together and have what you want (despite your circumstances,) be an irresistible influencer, win over the masses without manipulation and become a total social selling siren.",
@@ -34,7 +34,7 @@ export const creators = [
     slug: "constance-greer-2",
     name: "Constance Greer",
     role: "Contributing Author, Experienced leader in the Professional Trainer and Coach Industry",
-    headshot: "/Constance Greer.png",
+    headshot: "/Constance Greer.webp",
     bio: [ 
       "For the last 20 years, Constance has been an experienced leader with a demonstrated history of working in the professional training & coaching industry.",
       "Her specialized skill set is in Coaching for Emotional Intelligence & Mindfulness, Business & Executive Coaching, Coaching for Parents. Speaker, Facilitator, and EFT (Emotional Freedom Technique) Master.",
@@ -59,7 +59,7 @@ export const creators = [
     slug: "deborah-helser-2",
     name: "Deborah Helser",
     role: "Contributing Author, Retired Teacher's Aide with Special Needs and Currently, Director with Pampered Chef 25 years as of 2/25/2026",
-    headshot: "/Deborah Helser.png",
+    headshot: "/Deborah Helser.webp",
     bio: [
       "Deborah Helser worked 23 years as a Teacher's Aide with Special Needs Students until her retirement in 2022 as well as runs her own Direct Sales business with Pampered Chef since 2001.",
       "She has been married to her husband Wayne since 1978 and has three grown (productive) offspring (Victoria Amerine, W. Scott & William) as well as 2 very dear daughters-in-law (Katie Stack and Meredith Mahen), 8-year-old grandson (Ethan), 6-year-old granddaughters (Lily) 3-year-old (Allie), and an amazing son-in-law (Lee Amerine), 13-year-old granddaughter (McKynlee), and 11-year-old granddaughter (Raegan).",
@@ -72,7 +72,7 @@ export const creators = [
     slug: "deborah-c-owen",
     name: "Deborah C Owen",
     role: "Contributing Author, Award-winning podcaster, best-selling author, personal and business coach, copywriter, and marketer",
-    headshot: "/Deborah C. Owen.png",
+    headshot: "/Deborah C. Owen.webp",
     bio: [
       "Award-winning podcaster, best-selling author, personal and business coach, copywriter, and marketer, Deborah Owen, is the founder of Big-League Copywriting.",
       "After 12 years as a public-school library teacher, Deborah began her entrepreneurial journey as a parent coach, and Mental Toughness trainer for youth athletes and performers. During this time, she began learning marketing skills from several 7-figure earners around the globe, all of whom were very interested in her writing abilities.",
@@ -87,7 +87,7 @@ export const creators = [
     slug: "kristin-a-carbone",
     name: "Kristin A Carbone",
     role: "Contributing Author, Heart Centered Soulprenuer",
-    headshot: "/Kristin A Carbone.png",
+    headshot: "/Kristin A Carbone.webp",
     bio: [
       "Kristin Carbone is an astrologer, cosmic coach, and founder of My Organic Soulution. She supports mothers as they navigate the emotional complexity of raising tweens and teens, helping them move beyond power struggles, guilt, and disconnection to create more meaningful relationships during the teen years.",
       "Through astrology, emotional awareness, and practical coaching tools, Kristin helps mothers move from reacting to relating. Through her signature program, The Courage Method, she guides them to understand their own patterns, regulate their nervous systems, and communicate with greater compassion, curiosity, and confidence. Her work is rooted in the belief that when a parent learns to understand themselves more deeply, the entire family dynamic can begin to shift.",
@@ -100,7 +100,7 @@ export const creators = [
   slug: "lee-collver-richards",
   name: "Lee Collver-Richards",
   role: "Contributing Author. Canadian-born. World Traveler. Hawai'i home.",
-  headshot: "/Lee Collver-Richards.png",
+  headshot: "/Lee Collver-Richards.webp",
   bio: [
     "Lee has devoted her professional life to creating exceptional curriculum and learning experiences for adults and children alike, teachers and learners, one and the same.",
     "Affectionately known as the joy maker, she invites everyone she meets to more fully love and include the child they once were.",
@@ -116,7 +116,7 @@ export const creators = [
     slug: "louisa-joy-dykstra",
     name: "Louisa Joy Dykstra",
     role: "Contributing Author, Mom, Nana, Rescue Dog Mom, Business Owner, and Author",
-    headshot: "/Louisa Joy Dykstra.png",
+    headshot: "/Louisa Joy Dykstra.webp",
     bio: "Louisa Joy Dykstra is a mom, nana, rescue dog mom, business owner, and author. Learn more at https://www.LouisaJoy.com.",
     links: { site: "https://www.louisajoy.com/" }
   },   
@@ -125,7 +125,7 @@ export const creators = [
     slug: "marion-solis",
     name: "Marion Solis",
     role: "Contributing Author, An inspiring heart-centered Mastermind Leader, Healer, and Coach",
-    headshot: "/Marion Solis.png",
+    headshot: "/Marion Solis.webp",
     bio: [
       "Marion Solis is the Instigator of the “Being Yourself Rocks” movement where you can finally stop being everything to everyone else and start being yourself – because “Being Yourself Rocks”!",
       "As an inspiring, heart-centered Mastermind Leader, Healer and Coach, she helps amazing people like you greet each day with “I love my life!” – and really mean it. Advanced Tapping (EFT), chakra-based transformational processes, and the five Life Purpose Profiles are just a few of the tools in her toolbox.",
@@ -138,7 +138,7 @@ export const creators = [
     slug: "michelle-lowbeer",
     name: "Michelle Lowbeer",
     role: "Contributing Author, A parent and children's book author from Sydney, Australia, and creator of \"Hairy Thought-Buster and The Fluffies\"",
-    headshot: "/Michelle Lowbeer.png",
+    headshot: "/Michelle Lowbeer.webp",
     bio: [
       "Michelle Lowbeer is a parent and children’s book author from Sydney, Australia, and creator of “Hairy Thought-Buster and The Fluffies”.",
       "She writes books and programs to help children bust their negative thoughts and build positive self-esteem beliefs! She is also a primary school ethics teacher, and in her spare time likes to get out and boogey!! You can contact her at hello@hairythoughtbuster.com.",
@@ -150,7 +150,7 @@ export const creators = [
     slug: "murielle-fellous",
     name: "Murielle Fellous",
     role: "Contributing Author, An intuitive life-coach",
-    headshot: "/Murielle Fellous.png",
+    headshot: "/Murielle Fellous.webp",
     bio: [
       "Born and raised in France, Murielle Fellous raised her three kids as a single mom in the United States for 24 years.  She now resides in Tel Aviv, Israel with her youngest child.",
       "Because of the challenges she personally underwent as a single parent, when her older children became teenagers and started acting out, she founded the “Co-Parenting with the Universe™” coaching and parenting approach and its corresponding podcast.",
@@ -164,7 +164,7 @@ export const creators = [
     slug: "patricia-dawn-clark",
     name: "Patricia Dawn Clark",
     role: "Contributing Author, A mother of four and passionate about the growth and development of our children",
-    headshot: "/Patricia Dawn Clark.png",
+    headshot: "/Patricia Dawn Clark.webp",
     bio: [
       "Patricia Dawn Clark is a mother of four and passionate about the growth and development of our children in a respectful and mindful way.",
       "Amid her mothering and educaring journey, Dawn discovered the unique personal and professional growth opportunity in direct sales.",
@@ -178,7 +178,7 @@ export const creators = [
     slug: "renee-realta",
     name: "Renee Realta",
     role: "Contributing Author, She is a loving soccer mom and wife who's been navigating her way through life",
-    headshot: "/Renee Realta.png",
+    headshot: "/Renee Realta.webp",
     bio: [
       "Renee is married and has two boys. She is a loving soccer mom and wife who’s been navigating her way through life with creativity, self-discovery, and growth ever since she was young. She is tremendously passionate about inspiring people to believe in themselves. “It will all work out,” has been a powerful mantra in her life ever since she became a single mother at the age of 22.",
       "Having now overcome obstacles that could bring anyone to their breaking point, Renee has developed a mindset and strategies for succeeding no matter the circumstance. She has learned to pivot quickly and look for solutions and opportunities in every situation.",
@@ -191,7 +191,7 @@ export const creators = [
     slug: "tamara-jackson-clark",
     name: "Tamara Jackson Clark",
     role: "Contributing Author, The Girl of the Wild Forest Light is a Forest Reiki™ Intuitive Artist",
-    headshot: "/Tamara Jackson Clark.png",
+    headshot: "/Tamara Jackson Clark.webp",
     bio: [
       "Tamara Jackson Clark (The Girl of the Wild Forest Light) is a Forest Reiki™ Intuitive Artist who lives a life of adventure in Alaska’s wilderness.",
       "She loves connecting people to nature, exploring the healing properties of trees, and is working toward publishing a children’s book with her nature kaleidoscope images and the Forest tales that they inspire.",   
@@ -203,7 +203,7 @@ export const creators = [
     slug: "becky-norwood",
     name: "Becky Norwood",
     role: "Spotlight Publishing",
-    headshot: "/Becky.png",
+    headshot: "/Becky.webp",
     bio: [
       "#1 International Bestselling author, speaker, & book publishing expert, Becky Norwood is CEO of Spotlight Publishing™. She is widely recognized for the empowering and intuitive way she guides others to weave storytelling into their books and marketing. She incorporates her methods with sound marketing that is the pathway for business expansion and audience growth.",
       "Becky has brought over 300 authors to #1 bestseller. Through her Author Studio TV Show, countless listeners have heard her interviews of both authors and experts offering sage advice. She offers an extensive catalog of services supporting emerging and established authors.",
@@ -218,7 +218,7 @@ export const creators = [
     slug: "martha-zimmerman-vorel",
     name: "Martha Zimmerman Vorel",
     role: "Book Cover Designer",
-    headshot: "/Martha.png",
+    headshot: "/Martha.webp",
     bio: "Martha Vorel is the kind of person who gives freely of her generous nature and highly intuitive and joyful personality. She is also a Train Your Brain alumna, and designer of our beautiful book cover.",   
     links: {}
   },  
@@ -227,7 +227,7 @@ export const creators = [
     slug: "sheng-vue",
     name: "Sheng Vue Yang",
     role: "Website Designer | Go See Online Stellar Designs LLC",
-    headshot: "/Sheng.jpg",
+    headshot: "/Sheng.webp",
     bio: [
     "I am a wife, mother, Target team member, designer, and self-taught developer. I enjoy learning by building, helping others bring ideas to life, and exploring how thoughtful design can support families, communities, and meaningful work. Much of my creative journey has happened alongside raising children, working, entrepreneurship and continually discovering who I am becoming."
     ],
