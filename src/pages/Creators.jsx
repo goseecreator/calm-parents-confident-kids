@@ -90,7 +90,7 @@ export default function Creators() {
                 >
                   <img
                     src={c.headshot}
-                    alt={c.name}
+                    alt={`Portrait of ${current.name}`} 
                     className="h-full w-full object-cover"
                     loading="lazy"
                     decoding="async"

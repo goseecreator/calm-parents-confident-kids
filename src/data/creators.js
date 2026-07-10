@@ -46,7 +46,7 @@ export const creators = [
     slug: "dana-wilde",
     name: "Dana Wilde",
     role: "An Expert Brain Trainer for a Positive Mindset",
-    headshot: "/Dana Wilde.png",
+    headshot: "/Dana Wilde.webp",
     bio: [
       "Dana Wilde is an expert on how to change your mindset intentionally and systematically, so you get better outcomes. After growing her own business from zero to a million dollars a year in under 19 months, Dana now shows you how to make money by being happy and get paid for being YOU!",
       "Dana is the trusted authority on fast business growth for entrepreneurs, particularly coaches, speakers, authors, energy and EFT practitioners, fitness professionals, and health and wellness entrepreneurs. With nearly 100,000 followers in 87 countries, Dana is the bestselling author of Train Your Brain and features in the movies, The Abundance Factor, The Truth About Prosperity, and Dream Big.",
