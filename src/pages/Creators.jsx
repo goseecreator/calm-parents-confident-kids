@@ -83,8 +83,8 @@ export default function Creators() {
                   data-idx={i}
                   to={`/creators/${c.slug}`}
                   className={`h-20 w-20 shrink-0 snap-start overflow-hidden rounded-full border bg-cream ring-offset-4 ring-offset-warm-white transition hover:scale-105 md:h-24 md:w-24 ${i === index
-                      ? "ring-2 ring-brand shadow-lg"
-                      : "opacity-75 hover:opacity-100"
+                    ? "ring-2 ring-brand shadow-lg"
+                    : "opacity-75 hover:opacity-100"
                     }`}
                   title={c.name}
                 >
@@ -101,12 +101,12 @@ export default function Creators() {
           </div>
 
           <div className="mx-auto mt-12 grid max-w-6xl items-start gap-8 rounded-[2rem] border border-black/5 bg-white/85 p-6 shadow-card backdrop-blur md:grid-cols-[340px,1fr] md:p-8 lg:grid-cols-[380px,1fr]">
-            <div className="overflow-hidden rounded-[2rem] border border-black/5 bg-cream shadow-sm">
+            <div className="mx-auto aspect-square w-full max-w-[340px] overflow-hidden rounded-full border border-black/5 bg-cream shadow-sm">
               <img
                 src={current.headshot}
                 alt={`${current.name} headshot`}
-                className="aspect-[4/5] h-full w-full object-cover"
-                loading="lazy"
+                className="h-full w-full object-cover object-center"
+                loading="eager"
                 decoding="async"
               />
             </div>
@@ -124,14 +124,14 @@ export default function Creators() {
 
               <div className="mt-4 mb-6 h-px w-16 bg-brand/20" />
 
-              <div className="mt-6 max-w-[68ch] text-[15px] leading-8 text-ink/75">              
-              <ExpandableText collapsedLines={10}>
-                <div className="space-y-4">
-                  {(Array.isArray(current.bio) ? current.bio : [current.bio]).map((paragraph, i) => (
-                    <p key={i}>{paragraph}</p>
-                  ))}
-                </div>
-              </ExpandableText>
+              <div className="mt-6 max-w-[68ch] text-[15px] leading-8 text-ink/75">
+                <ExpandableText collapsedLines={10}>
+                  <div className="space-y-4">
+                    {(Array.isArray(current.bio) ? current.bio : [current.bio]).map((paragraph, i) => (
+                      <p key={i}>{paragraph}</p>
+                    ))}
+                  </div>
+                </ExpandableText>
               </div>
 
               <div className="mt-8 flex flex-wrap items-center gap-3">
