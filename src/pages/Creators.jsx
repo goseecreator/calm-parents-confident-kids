@@ -93,6 +93,7 @@ export default function Creators() {
                     alt={c.name}
                     className="h-full w-full object-cover"
                     loading="lazy"
+                    decoding="async"
                   />
                 </Link>
               ))}
@@ -105,6 +106,8 @@ export default function Creators() {
                 src={current.headshot}
                 alt={`${current.name} headshot`}
                 className="aspect-[4/5] h-full w-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
             </div>
 
