@@ -33,16 +33,18 @@ export default function Nav() {
                   >
                     {link.name}
                   </Link>
-                  <div className="absolute left-0 mt-2 hidden group-hover:block bg-white border rounded shadow z-20">
-                    {link.sub.map((sublink) => (
-                      <Link
-                        key={sublink.name}
-                        to={sublink.path}
-                        className="block px-4 py-2 text-sm text-ink hover:bg-gray-50"
-                      >
-                        {sublink.name}
-                      </Link>
-                    ))}
+                  <div className="absolute left-0 top-full pt-2 hidden group-hover:block group-focus-within:block z-20">
+                    <div className="bg-white border rounded shadow">
+                      {link.sub.map((sublink) => (
+                        <Link
+                          key={sublink.name}
+                          to={sublink.path}
+                          className="block px-4 py-2 text-sm text-ink hover:bg-gray-50 whitespace-nowrap"
+                        >
+                          {sublink.name}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 </div>
               ) : (
