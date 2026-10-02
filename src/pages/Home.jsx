@@ -12,7 +12,7 @@ export default function Home() {
     <>
 
 <Helmet>
-  <title>Calm Parents Confident Kids | Brain Training for Families & Teachers</title>
+  <title>Calm Parents Confident Kids | Brain Training for Families & Life-long Learners</title>
 
   <meta
     name="description"
@@ -23,7 +23,7 @@ export default function Home() {
 
   <meta
     property="og:description"
-    content="Brain Training for Parents & Teachers. Practical tools for calmer homes, stronger connections, and confident kids."
+    content="Brain Training for Parents & Life-long Learners. Practical tools for calmer homes, stronger connections, and confident kids."
   />
 
   <meta
@@ -65,7 +65,7 @@ export default function Home() {
           <div className="text-center md:text-left">
 
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-coral">
-              Brain Training for Parents & Teachers
+              Brain Training for Parents & Life-long Learners
             </p>
 
             <h1 className="font-heading text-5xl leading-tight md:text-7xl">        Calm Parents.
