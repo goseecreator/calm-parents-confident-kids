@@ -100,7 +100,7 @@ export const creators = [
   slug: "lee-collver-richards",
   name: "Lee Collver-Richards",
   role: "Contributing Author. Canadian-born. World Traveler. Hawai'i home.",
-  headshot: "/Lee Collver-Richards.webp",
+  headshot: "/LeePhoto.webp",
   bio: [
     "Lee has devoted her professional life to creating exceptional curriculum and learning experiences for adults and children alike, teachers and learners, one and the same.",
     "Affectionately known as the joy maker, she invites everyone she meets to more fully love and include the child they once were.",
@@ -109,7 +109,7 @@ export const creators = [
     "If you have felt disconnected from others, from yourself, or from the living Earth, connect with Lee and a kindred Whole New Human community of lifelong learners at LearnByHeart.org.",
     "For booking programs, speaking engagements, or private consultation, email connect@leecollver.com."
   ],
-  links: { site: "https://www.learnbyheart.org/" }
+  links: { site: "www.learnbyheart.org/" }
 },   
   {
     order: 9,
